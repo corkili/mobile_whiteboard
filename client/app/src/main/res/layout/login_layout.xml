@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_back"
+    android:orientation="vertical">
+    <!-- 顶部空白-->
+    <RelativeLayout
+        style="@style/layout_vertical"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to UI!"
+            android:textSize="25sp"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/layout_vertical"
+        android:layout_weight="3"
+        android:orientation="vertical">
+        <!-- 用户名-->
+        <View
+            style="@style/layout_vertical"
+            android:layout_weight="0.2" />
+
+        <LinearLayout
+            style="@style/layout_vertical"
+            android:layout_weight="0.8"
+            android:orientation="horizontal">
+
+            <View
+                style="@style/layout_horizontal"
+                android:layout_weight="0.4" />
+
+            <LinearLayout
+                style="@style/layout_horizontal"
+                android:layout_weight="2"
+                android:background="@drawable/login_frame"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/layout_horizontal"
+                    android:layout_margin="4dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/user" />
+
+                <EditText
+                    android:id="@+id/userName_Login_ET"
+                    style="@style/layout_horizontal"
+                    android:layout_weight="2"
+                    android:background="#00000000"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:hint="手机号码"
+                    android:textColor="#fff"
+                    android:textColorHint="#dbdbdb"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout>
+
+            <View
+                style="@style/layout_horizontal"
+                android:layout_weight="0.4" />
+        </LinearLayout>
+        <!-- 密码-->
+        <View
+            style="@style/layout_vertical"
+            android:layout_weight="0.2" />
+
+        <LinearLayout
+            style="@style/layout_vertical"
+            android:layout_weight="0.8"
+            android:orientation="horizontal">
+
+            <View
+                style="@style/layout_horizontal"
+                android:layout_weight="0.4" />
+
+            <LinearLayout
+                style="@style/layout_horizontal"
+                android:layout_weight="2"
+                android:background="@drawable/login_frame"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/layout_horizontal"
+                    android:layout_margin="4dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/password" />
+
+                <EditText
+                    android:id="@+id/userPass_Login_ET"
+                    style="@style/layout_horizontal"
+                    android:layout_weight="2"
+                    android:background="#00000000"
+                    android:hint="用户密码"
+                    android:inputType="textPassword"
+                    android:textColor="#fff"
+                    android:textColorHint="#dbdbdb"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout>
+
+            <View
+                style="@style/layout_horizontal"
+                android:layout_weight="0.4" />
+        </LinearLayout>
+        <!-- 按钮-->
+        <View
+            style="@style/layout_vertical"
+            android:layout_weight="0.4" />
+
+        <LinearLayout
+            style="@style/layout_vertical"
+            android:layout_weight="0.8"
+            android:orientation="horizontal">
+
+            <View
+                style="@style/layout_horizontal"
+                android:layout_weight="0.4" />
+
+            <Button
+                android:id="@+id/user_Login_Sure"
+                style="@style/layout_horizontal"
+                android:layout_weight="2"
+                android:background="@drawable/login_btn_back"
+                android:onClick="Sure_Login"
+                android:text="登录"
+                android:textSize="15sp" />
+
+            <View
+                style="@style/layout_horizontal"
+                android:layout_weight="0.4" />
+        </LinearLayout>
+
+        <View
+            style="@style/layout_vertical"
+            android:layout_weight="0.2" />
+        <!--功能栏-->
+        <LinearLayout
+            style="@style/layout_vertical"
+            android:layout_weight="0.4"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/layout_horizontal"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:onClick="ForgetPassword"
+                android:text="忘记密码？"
+                android:textColor="#fff" />
+
+            <View
+                style="@style/layout_horizontal"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/user_Rigister"
+                style="@style/layout_horizontal"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:onClick="NewUserRegister"
+                android:text="新用户注册"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/layout_vertical"
+            android:layout_weight="6">
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

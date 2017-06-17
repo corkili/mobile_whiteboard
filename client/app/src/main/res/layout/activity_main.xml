@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/layout_full"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#11B7F3">
+
+        <com.example.asus.ui_project.view.CircleImageView
+            android:id="@+id/header_icon"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="3dp"
+            android:src="@mipmap/icon"
+            app:border_color="#fff"
+            app:border_width="2dp" />
+
+
+        <TextView
+            android:id="@+id/user_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Fluency"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/layout_vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/start_meeting"
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/pic1"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="20dp"
+            android:text="召集会议"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/join_meeting"
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/pic2"
+            android:text="参与会议"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="20dp"
+            android:textColor="#000"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/meeting_note"
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/pic3"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="20dp"
+            android:text="会议笔记"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/my_information"
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/pic4"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="20dp"
+            android:text="个人信息"
+            android:textColor="#000"
+            android:textSize="25sp" />
+    </LinearLayout>
+</LinearLayout>
